@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mei Wong - Software Developer</title>
+
+    <!-- bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -110,7 +115,12 @@
                   <form class="row g-3">
                     <div class="col-lg-6">
                       <label for="modal-name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="modal-name" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="modal-name"
+                        autocomplete="name"
+                      />
                     </div>
                     <div class="col-lg-6">
                       <label for="modal-email" class="form-label">Email</label>
@@ -118,6 +128,7 @@
                         type="email"
                         class="form-control"
                         id="modal-email"
+                        autocomplete="email"
                       />
                     </div>
                     <div class="col-12 mb-4 text-start">
@@ -190,7 +201,7 @@
             <div class="col-12 col-md-6">
               <div class="card mb-3">
                 <img
-                  src="/assets/images/wags-and-walks.webp"
+                  src="assets/images/wags-and-walks.webp"
                   class="card-img-top"
                   alt="A man walking several dogs early in the morning"
                 />
@@ -209,7 +220,7 @@
             <div class="col-12 col-md-6">
               <div class="card mb-3">
                 <img
-                  src="/assets/images/we-wellness.webp"
+                  src="assets/images/we-wellness.webp"
                   class="card-img-top"
                   alt="A spa with candles towels and natural material"
                 />
@@ -228,7 +239,7 @@
             <div class="col-12 col-md-6">
               <div class="card mb-3">
                 <img
-                  src="/assets/images/math-wiz.webp"
+                  src="assets/images/math-wiz.webp"
                   class="card-img-top"
                   alt="A child practicing math at a computer"
                 />
@@ -247,7 +258,7 @@
             <div class="col-12 col-md-6">
               <div class="card mb-3">
                 <img
-                  src="/assets/images/bmi-calculator.webp"
+                  src="assets/images/bmi-calculator.webp"
                   class="card-img-top"
                   alt="Weighing scales seen from the first person view of the person standing on the scales"
                 />
@@ -284,20 +295,41 @@
           <form class="row g-3">
             <div class="col-lg-4">
               <label for="full-name" class="form-label">Full Name</label>
-              <input type="email" class="form-control" id="full-name" />
+              <input
+                type="text"
+                class="form-control"
+                id="full-name"
+                autocomplete="name"
+              />
             </div>
             <div class="col-lg-4">
               <label for="phone-number" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" id="phone-number" />
+              <input
+                type="tel"
+                class="form-control"
+                id="phone-number"
+                autocomplete="tel"
+              />
             </div>
             <div class="col-lg-4">
               <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-control" id="email" />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                autocomplete="email"
+              />
             </div>
 
             <div class="col-12">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3"> </textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                autocomplete="off"
+              >
+              </textarea>
             </div>
 
             <div class="col-12">
