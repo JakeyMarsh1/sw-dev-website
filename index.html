@@ -70,6 +70,70 @@
           </p>
           <!-- mb-5 gives extra margin spacing under lead text -->
           <p class="lead mb-5">Let's create something amazing together!</p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#SubscribeModal"
+          >
+            Subscribe to my newsletter!
+          </button>
+
+          <!-- Modal -->
+
+          <div
+            class="modal fade"
+            id="SubscribeModal"
+            tabindex="-1"
+            aria-labelledby="modallabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modallabel">Subscribe</h1>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Join my newsletter for the latest updates on my projects,
+                    coding tips, and industry insights delivered straight to
+                    your inbox.
+                  </p>
+                  <form class="row g-3">
+                    <div class="col-lg-6">
+                      <label for="modal-name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="modal-name" />
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="modal-email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="modal-email"
+                      />
+                    </div>
+                    <div class="col-12 mb-4 text-start">
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        Sign Up!
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
